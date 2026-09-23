@@ -1,0 +1,326 @@
+/* Arquivo de estilo do nosso primeiro site */
+/* Aqui colocamos as cores e o visual da página */
+/* Esse CSS é externo, ligado no HTML pela tag <link> */
+
+/* Zera a margem e o padding de tudo para começar do zero */
+/* Aprendemos isso na aula para tirar o padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo da página */
+body {
+    background-color: #f5efe6; /* cor de fundo bege clarinho */
+    color: #333333; /* cor do texto cinza escuro */
+    font-family: Arial, Helvetica, sans-serif; /* fonte simples */
+    font-size: 16px; /* tamanho da letra */
+    line-height: 1.6; /* espaço entre as linhas - PROPRIEDADE EXTRA 1 */
+    text-align: left; /* alinhamento do texto */
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #4b2e20; /* marrom escuro de café */
+    color: white; /* letra branca */
+    text-align: center; /* centraliza tudo */
+    padding: 30px; /* espaço dentro do cabeçalho */
+    margin-bottom: 20px; /* espaço fora, embaixo */
+    border-bottom: 5px solid #d9a679; /* borda embaixo - aprendi na aula */
+}
+
+/* Título principal */
+header h1 {
+    font-size: 36px; /* tamanho grande */
+    font-weight: bold; /* negrito */
+    letter-spacing: 2px; /* espaço entre letras - EXTRA 2 */
+    margin-bottom: 10px; /* espaço embaixo */
+}
+
+/* Slogan */
+.slogan {
+    font-size: 18px;
+    font-style: italic; /* itálico */
+    margin-bottom: 20px;
+    opacity: 0.9; /* deixa um pouco transparente - EXTRA 3 */
+}
+
+/* MENU */
+nav ul {
+    list-style: none; /* tira as bolinhas da lista */
+    display: flex; /* deixa um do lado do outro - EXTRA 4 */
+    justify-content: center; /* centraliza - EXTRA 5 */
+    gap: 15px; /* espaço entre os itens - EXTRA 6 */
+    flex-wrap: wrap; /* quebra linha no celular */
+}
+
+/* Links do menu */
+nav a {
+    color: white;
+    text-decoration: none; /* tira o sublinhado */
+    font-weight: bold;
+    background-color: #6f4e37; /* marrom mais claro */
+    padding: 10px 15px; /* espaço dentro */
+    border-radius: 8px; /* canto arredondado - EXTRA 7 */
+    transition: background-color 0.3s; /* animação suave - EXTRA 8 */
+}
+
+/* Quando passa o mouse no link */
+nav a:hover {
+    background-color: #d9a679; /* muda de cor */
+    color: #4b2e20;
+    cursor: pointer; /* mãozinha no mouse - EXTRA 9 */
+    transform: scale(1.05); /* aumenta um pouco - EXTRA 10 */
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 90%; /* largura */
+    max-width: 800px; /* largura máxima - EXTRA 11 */
+    margin: 0 auto; /* centraliza com margem automática */
+    padding: 20px;
+}
+
+/* Cada seção */
+section {
+    background-color: white; /* fundo branco */
+    border: 1px solid #ddd; /* borda fininha */
+    border-radius: 10px; /* canto arredondado */
+    padding: 25px; /* espaço interno */
+    margin-bottom: 25px; /* espaço entre seções */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* sombra - EXTRA 12 */
+}
+
+/* Títulos das seções */
+section h2 {
+    color: #4b2e20; /* marrom */
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #d9a679; /* linha embaixo */
+    padding-bottom: 10px;
+}
+
+/* Subtítulos */
+section h3 {
+    color: #6f4e37;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos */
+section p {
+    margin-bottom: 10px; /* espaço embaixo */
+    text-align: justify; /* texto justificado */
+}
+
+/* Imagens */
+img {
+    width: 100%; /* ocupa toda a largura */
+    height: auto; /* altura automática */
+    border-radius: 8px; /* arredonda */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ddd; /* borda */
+}
+
+/* Legenda das fotos */
+.legenda {
+    font-size: 14px;
+    text-align: center;
+    color: #777;
+    font-style: italic;
+}
+
+/* Botão principal */
+.botao {
+    display: inline-block; /* para aceitar padding */
+    background-color: #4b2e20;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Botão com mouse em cima */
+.botao:hover {
+    background-color: #6f4e37;
+    cursor: pointer;
+}
+
+/* Caixa de destaque */
+.destaque {
+    background-color: #fff3cd; /* amarelo claro */
+    border: 1px solid #ffcc00;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* CARDS DO CARDÁPIO */
+.card {
+    background-color: #fafafa; /* cinza bem claro */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Preço em destaque */
+.preco {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32; /* verde */
+}
+
+/* Listas */
+ul, ol {
+    margin-left: 30px; /* empurra pra direita */
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+/* TABELA */
+table {
+    width: 100%;
+    border-collapse: collapse; /* junta as bordas */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Células da tabela */
+th, td {
+    border: 1px solid #999; /* borda */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Cabeçalho da tabela */
+th {
+    background-color: #4b2e20;
+    color: white;
+    font-weight: bold;
+}
+
+/* Aviso */
+.aviso {
+    font-size: 14px;
+    color: #a00;
+    text-align: center;
+}
+
+/* Depoimentos */
+.depoimento {
+    background-color: #f0e6d8;
+    border-left: 4px solid #4b2e20; /* borda só na esquerda */
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+/* FORMULÁRIO */
+form {
+    display: flex;
+    flex-direction: column; /* um campo embaixo do outro */
+    gap: 10px; /* espaço entre campos */
+    margin-top: 15px;
+}
+
+/* Rótulos */
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Campos de texto */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+/* Botões do formulário */
+button {
+    background-color: #4b2e20;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Botão com mouse em cima */
+button:hover {
+    background-color: #6f4e37;
+    cursor: pointer;
+}
+
+/* Botão limpar diferente */
+.limpar {
+    background-color: #999;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333; /* cinza escuro */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Links do rodapé */
+footer a {
+    color: #d9a679;
+    text-decoration: none;
+}
+
+/* Direitos */
+.direitos {
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* PARTE RESPONSIVA */
+/* Quando a tela for pequena (celular), muda algumas coisas */
+/* Aprendemos isso como propriedade extra de responsividade - EXTRA 13 */
+@media (max-width: 600px) {
+    /* Título menor no celular */
+    header h1 {
+        font-size: 26px;
+    }
+
+    /* Menu um embaixo do outro */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Seção com menos espaço */
+    section {
+        padding: 15px;
+    }
+
+    /* Main ocupa quase tudo */
+    main {
+        width: 95%;
+        padding: 10px;
+    }
+}
