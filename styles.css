@@ -1,0 +1,285 @@
+/* Folha de estilos externa do trabalho */
+/* Atividade: Estrutura e Formatação de Texto */
+/* Grupo: Felipe, Gustavo, Kevin, Thiago, Wellington */
+/* Faculdade de Engenharia de Sorocaba - 2026 */
+/* Ligada no HTML pela tag <link> */
+
+/* Zera tudo para tirar o padrão do navegador */
+/* Aprendemos isso na aula */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f2f2f2; /* cinza bem claro de fundo */
+    color: #333333; /* cor do texto */
+    font-family: Arial, Helvetica, sans-serif; /* fonte simples */
+    font-size: 16px; /* tamanho da letra */
+    line-height: 1.6; /* espaço entre linhas - EXTRA 1 */
+    text-align: left; /* alinhamento padrão */
+}
+
+/* CABEÇALHO PRINCIPAL */
+header {
+    background-color: white; /* fundo branco */
+    padding: 25px; /* espaço dentro */
+    margin-bottom: 15px; /* espaço fora embaixo */
+    border-bottom: 3px solid #cccccc; /* linha embaixo */
+    max-width: 900px; /* largura máxima - EXTRA 2 */
+    margin-left: auto; /* centraliza */
+    margin-right: auto; /* centraliza */
+    border-radius: 8px; /* canto arredondado - EXTRA 3 */
+}
+
+/* Título H1 */
+h1 {
+    font-size: 28px; /* tamanho grande */
+    font-weight: bold; /* negrito */
+    margin-bottom: 10px; /* espaço embaixo */
+}
+
+/* Título H2 */
+h2 {
+    font-size: 24px; /* um pouco menor */
+    margin-bottom: 10px;
+    color: #222222; /* cinza escuro */
+}
+
+/* Título H3 */
+h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* Título H4 */
+h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Título H5 */
+h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Título H6 */
+h6 {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #666666; /* cinza médio */
+}
+
+/* CLASSES DE ALINHAMENTO */
+/* Usadas no cabeçalho em vez do align */
+
+/* Centralizado */
+.centro {
+    text-align: center; /* centraliza o texto */
+}
+
+/* Alinhado à esquerda */
+.esquerda {
+    text-align: left; /* joga para a esquerda */
+}
+
+/* Alinhado à direita */
+.direita {
+    text-align: right; /* joga para a direita */
+}
+
+/* Classe center do texto centralizado */
+/* Faz a mesma coisa do centro, reaproveitável */
+.center {
+    text-align: center; /* centraliza */
+    font-size: 22px; /* letra maior */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #eef4ff; /* azul bem claro */
+    border-radius: 5px; /* arredonda */
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    text-align: center; /* centraliza os links */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1); /* sombra - EXTRA 4 */
+}
+
+/* Links do menu */
+nav a {
+    color: blue; /* azul padrão de link */
+    text-decoration: underline; /* sublinhado */
+    font-size: 20px; /* maior para clicar fácil */
+    padding: 5px 10px; /* espaço para clicar */
+    transition: color 0.3s; /* animação suave - EXTRA 5 */
+}
+
+/* Quando passa o mouse no link */
+nav a:hover {
+    color: darkblue; /* azul mais escuro */
+    cursor: pointer; /* mãozinha - EXTRA 6 */
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    width: 95%; /* largura quase toda */
+    max-width: 900px; /* não passa disso */
+    margin: 0 auto; /* centraliza */
+    padding: 10px;
+}
+
+/* Seção de posts */
+section {
+    background-color: white;
+    border: 1px solid #dddddd; /* borda fininha */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Artigo post */
+.post {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Parágrafos do post */
+.post p {
+    margin-bottom: 15px; /* espaço entre parágrafos */
+    text-align: left;
+}
+
+/* Texto em negrito */
+/* Strong já é negrito, só reforçamos a cor */
+strong {
+    font-weight: bold;
+    color: #000000; /* preto */
+}
+
+/* Texto em itálico */
+em {
+    font-style: italic; /* itálico */
+}
+
+/* Texto sublinhado */
+/* Feito com classe no CSS externo */
+.sublinhado {
+    text-decoration: underline; /* linha embaixo */
+}
+
+/* Texto riscado */
+/* Feito com classe no CSS externo */
+.riscado {
+    text-decoration: line-through; /* linha no meio */
+}
+
+/* Subscrito e sobrescrito */
+/* Sub e sup já funcionam sozinhos */
+sub {
+    font-size: 12px; /* menor */
+}
+
+sup {
+    font-size: 12px; /* menor */
+}
+
+/* BARRA LATERAL */
+aside {
+    background-color: #f9f9f9; /* cinza claro */
+    border-left: 5px solid #0066cc; /* barra azul na esquerda */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Título da lateral */
+aside h3 {
+    color: #0066cc; /* azul */
+    margin-bottom: 10px;
+}
+
+/* SEÇÃO DO GRUPO */
+#grupo {
+    background-color: #fffbe6; /* amarelo bem claro */
+    border: 1px solid #ffcc00; /* borda amarela */
+}
+
+/* Lista do grupo */
+#grupo ul {
+    margin-left: 30px; /* empurra para a direita */
+    margin-bottom: 15px;
+    padding: 5px;
+    list-style: square; /* quadradinho na lista */
+    letter-spacing: 0.5px; /* espaço entre letras - EXTRA 7 */
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #333333; /* cinza escuro */
+    color: white; /* letra branca */
+    text-align: center; /* centralizado */
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.8; /* mais espaço */
+}
+
+/* Links do rodapé */
+footer a {
+    color: #99ccff; /* azul claro */
+    text-decoration: none; /* sem sublinhado */
+}
+
+/* Link com mouse em cima */
+footer a:hover {
+    text-decoration: underline; /* volta o sublinhado */
+    cursor: pointer;
+    opacity: 0.9; /* um pouco transparente - EXTRA 8 */
+}
+
+/* PARTE RESPONSIVA */
+/* Para o celular ficar bom */
+/* Aprendemos como extra de responsividade - EXTRA 9 */
+@media (max-width: 600px) {
+    /* Cabeçalho menor no celular */
+    header {
+        padding: 15px;
+    }
+
+    /* Título menor */
+    h1 {
+        font-size: 22px;
+    }
+
+    /* Menu menor */
+    nav a {
+        font-size: 18px;
+    }
+
+    /* Seção com menos espaço */
+    section {
+        padding: 15px;
+    }
+
+    /* Main ocupa quase tudo */
+    main {
+        width: 98%;
+        padding: 5px;
+    }
+
+    /* Center menor no celular */
+    .center {
+        font-size: 18px;
+    }
+}
