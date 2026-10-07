@@ -4,7 +4,9 @@
 <!-- Faculdade de Engenharia de Sorocaba -->
 <!-- Engenharia da Computação -->
 <!-- Integrantes: Felipe, Gustavo, Kevin, Thiago, Wellington -->
-<!-- Atividade: Estrutura e Formatação de Texto em HTML e CSS -->
+<!-- Atividade 1: Estrutura e Formatação de Texto em HTML e CSS -->
+<!-- Atividade 2: Box Model (Content, Padding, Border, Margin) + Flexbox + Git/GitHub -->
+<!-- Todo o código abaixo está comentado para explicar cada parte -->
 
 <html lang="pt-BR">
 <!-- Todo o site fica dentro do html -->
@@ -18,12 +20,13 @@
     <!-- Para funcionar bem no celular -->
     <meta name="author" content="Felipe, Gustavo, Kevin, Thiago, Wellington">
     <!-- Nome dos autores do trabalho -->
-    <meta name="description" content="Atividade de Web Design - Estrutura e Formatação de Texto">
+    <meta name="description" content="Atividade de Web Design - Box Model, Flexbox, Git e GitHub">
     <!-- Descrição que aparece no Google -->
-    <title>Meu Blog — Exemplo didático de HTML</title>
+    <title>Meu Blog — Box Model, Flexbox e Git/GitHub</title>
     <!-- Título da aba do navegador -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Liga o CSS externo, como pede a atividade -->
+    <!-- CSS de forma externa através da tag <link> -->
 </head>
 
 <body>
@@ -76,6 +79,24 @@
 
             <!-- Link para a barra lateral -->
             <a href="#lateral">Lateral</a>
+
+            <!-- Separador -->
+            |
+
+            <!-- Link para a seção box model -->
+            <a href="#boxmodel">Box Model</a>
+
+            <!-- Separador -->
+            |
+
+            <!-- Link para a seção flexbox -->
+            <a href="#flexbox">Flexbox</a>
+
+            <!-- Separador -->
+            |
+
+            <!-- Link para a seção git -->
+            <a href="#git">Git/GitHub</a>
 
             <!-- Separador -->
             |
@@ -274,6 +295,355 @@
 
         </section>
 
+        <!-- SEÇÃO BOX MODEL -->
+        <!-- Aqui começa a Atividade 2: Content, Padding, Border e Margin -->
+        <section id="boxmodel">
+            <!-- Section do box model -->
+            <!-- id boxmodel para o menu pular pra cá -->
+
+            <!-- Título da seção -->
+            <h2>Box Model — Content, Padding, Border e Margin</h2>
+
+            <!-- Texto explicando o box model -->
+            <p>
+                Todo elemento HTML é uma caixa com 4 partes:
+                Content (conteúdo, width/height),
+                Padding (espaço interno),
+                Border (borda) e
+                Margin (espaço externo).
+            </p>
+
+            <!-- Texto explicando as 20 caixas -->
+            <p>
+                Abaixo estão 20 elementos, cada um com valores próprios
+                nas 4 propriedades do Box Model.
+            </p>
+
+            <!-- Grade que segura as 20 caixas -->
+            <!-- A grade usa Flexbox para organizar de forma responsiva -->
+            <div class="grade-caixas">
+                <!-- Grade flexível das caixas -->
+
+                <!-- CAIXA 01 -->
+                <!-- Content pequeno, padding pequeno, borda fina, margin pequena -->
+                <div class="caixa caixa-01">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 01</span>
+                </div>
+
+                <!-- CAIXA 02 -->
+                <!-- Padding maior em cima/baixo -->
+                <div class="caixa caixa-02">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 02</span>
+                </div>
+
+                <!-- CAIXA 03 -->
+                <!-- Borda grossa sólida -->
+                <div class="caixa caixa-03">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 03</span>
+                </div>
+
+                <!-- CAIXA 04 -->
+                <!-- Margin grande nas laterais -->
+                <div class="caixa caixa-04">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 04</span>
+                </div>
+
+                <!-- CAIXA 05 -->
+                <!-- Content largo e baixo -->
+                <div class="caixa caixa-05">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 05</span>
+                </div>
+
+                <!-- CAIXA 06 -->
+                <!-- Borda tracejada -->
+                <div class="caixa caixa-06">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 06</span>
+                </div>
+
+                <!-- CAIXA 07 -->
+                <!-- Padding assimétrico -->
+                <div class="caixa caixa-07">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 07</span>
+                </div>
+
+                <!-- CAIXA 08 -->
+                <!-- Borda pontilhada -->
+                <div class="caixa caixa-08">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 08</span>
+                </div>
+
+                <!-- CAIXA 09 -->
+                <!-- Content alto -->
+                <div class="caixa caixa-09">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 09</span>
+                </div>
+
+                <!-- CAIXA 10 -->
+                <!-- Borda dupla -->
+                <div class="caixa caixa-10">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 10</span>
+                </div>
+
+                <!-- CAIXA 11 -->
+                <!-- Margin só em cima -->
+                <div class="caixa caixa-11">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 11</span>
+                </div>
+
+                <!-- CAIXA 12 -->
+                <!-- Padding só nas laterais -->
+                <div class="caixa caixa-12">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 12</span>
+                </div>
+
+                <!-- CAIXA 13 -->
+                <!-- Borda arredondada -->
+                <div class="caixa caixa-13">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 13</span>
+                </div>
+
+                <!-- CAIXA 14 -->
+                <!-- Content quadrado grande -->
+                <div class="caixa caixa-14">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 14</span>
+                </div>
+
+                <!-- CAIXA 15 -->
+                <!-- Borda colorida grossa -->
+                <div class="caixa caixa-15">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 15</span>
+                </div>
+
+                <!-- CAIXA 16 -->
+                <!-- Margin negativa para aproximar -->
+                <div class="caixa caixa-16">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 16</span>
+                </div>
+
+                <!-- CAIXA 17 -->
+                <!-- Padding grande interno -->
+                <div class="caixa caixa-17">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 17</span>
+                </div>
+
+                <!-- CAIXA 18 -->
+                <!-- Borda só embaixo -->
+                <div class="caixa caixa-18">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 18</span>
+                </div>
+
+                <!-- CAIXA 19 -->
+                <!-- Content mínimo com padding máximo -->
+                <div class="caixa caixa-19">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 19</span>
+                </div>
+
+                <!-- CAIXA 20 -->
+                <!-- Borda mista com margin centralizada -->
+                <div class="caixa caixa-20">
+                    <!-- Texto da caixa -->
+                    <span>Caixa 20</span>
+                </div>
+
+            </div>
+            <!-- Fim da grade de caixas -->
+
+            <!-- Legenda do box model -->
+            <p class="legenda">
+                Cada caixa acima tem width/height (Content),
+                padding, border e margin diferentes no CSS.
+            </p>
+
+        </section>
+
+        <!-- SEÇÃO FLEXBOX -->
+        <!-- Aqui demonstramos 20+ propriedades de Flexbox -->
+        <section id="flexbox">
+            <!-- Section do flexbox -->
+            <!-- id flexbox para o menu pular pra cá -->
+
+            <!-- Título da seção -->
+            <h2>Flexbox — Layout Flexível e Responsivo</h2>
+
+            <!-- Texto explicando o flexbox -->
+            <p>
+                O Flexbox organiza os elementos em linha ou coluna,
+                alinha, distribui espaços e quebra de linha,
+                deixando a página responsiva no celular e no PC.
+            </p>
+
+            <!-- DEMO 1: linha centralizada -->
+            <!-- Container flex em linha -->
+            <h3>Demo 1 — Linha centralizada (row + center)</h3>
+
+            <!-- Container flexível 1 -->
+            <div class="flex-demo flex-linha-centro">
+                <!-- Item flex 1 -->
+                <div class="item">Item A</div>
+                <!-- Item flex 2 -->
+                <div class="item">Item B</div>
+                <!-- Item flex 3 -->
+                <div class="item">Item C</div>
+            </div>
+
+            <!-- DEMO 2: coluna com espaçamento -->
+            <!-- Container flex em coluna -->
+            <h3>Demo 2 — Coluna com espaço entre (column + space-between)</h3>
+
+            <!-- Container flexível 2 -->
+            <div class="flex-demo flex-coluna-espaco">
+                <!-- Item flex 1 -->
+                <div class="item">Topo</div>
+                <!-- Item flex 2 -->
+                <div class="item">Meio</div>
+                <!-- Item flex 3 -->
+                <div class="item">Base</div>
+            </div>
+
+            <!-- DEMO 3: quebra de linha -->
+            <!-- Container com wrap -->
+            <h3>Demo 3 — Quebra de linha (wrap + gap)</h3>
+
+            <!-- Container flexível 3 -->
+            <div class="flex-demo flex-quebra">
+                <!-- Seis itens para forçar a quebra -->
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+            </div>
+
+            <!-- DEMO 4: crescimento e ordem -->
+            <!-- Container que mostra grow, shrink, basis, order e align-self -->
+            <h3>Demo 4 — Grow, shrink, basis, order e align-self</h3>
+
+            <!-- Container flexível 4 -->
+            <div class="flex-demo flex-cresce">
+                <!-- Item que cresce mais -->
+                <div class="item item-cresce">Cresce (grow)</div>
+                <!-- Item com base fixa -->
+                <div class="item item-base">Base (basis)</div>
+                <!-- Item que muda de ordem -->
+                <div class="item item-ordem">Ordem (order)</div>
+                <!-- Item alinhado sozinho -->
+                <div class="item item-solo">Solo (align-self)</div>
+            </div>
+
+            <!-- DEMO 5: reverso e alinhamento -->
+            <!-- Container em linha reversa -->
+            <h3>Demo 5 — Linha reversa (row-reverse + flex-end)</h3>
+
+            <!-- Container flexível 5 -->
+            <div class="flex-demo flex-reverso">
+                <!-- Itens em ordem invertida visual -->
+                <div class="item">Primeiro</div>
+                <div class="item">Segundo</div>
+                <div class="item">Terceiro</div>
+            </div>
+
+            <!-- Legenda do flexbox -->
+            <p class="legenda">
+                Redimensione a janela: os containers se adaptam
+                por causa do flex-wrap, gap e media queries.
+            </p>
+
+        </section>
+
+        <!-- SEÇÃO GIT E GITHUB -->
+        <!-- Aqui explicamos o versionamento feito no VS Code -->
+        <section id="git">
+            <!-- Section do git -->
+            <!-- id git para o menu pular pra cá -->
+
+            <!-- Título da seção -->
+            <h2>Git e GitHub — Versionamento no VS Code</h2>
+
+            <!-- Texto explicando o git -->
+            <p>
+                Usamos o Git dentro do VS Code para versionar o projeto
+                e publicamos o código no GitHub.
+            </p>
+
+            <!-- Lista ordenada com o passo a passo -->
+            <ol class="passos-git">
+                <!-- Passo 1 -->
+                <li>Abrimos a pasta no VS Code.</li>
+                <!-- Passo 2 -->
+                <li>Inicializamos o Git: <code>git init</code>.</li>
+                <!-- Passo 3 -->
+                <li>Adicionamos os arquivos: <code>git add index.html style.css styles.css</code>.</li>
+                <!-- Passo 4 -->
+                <li>Fizemos o commit: <code>git commit -m "Atividade box model e flexbox"</code>.</li>
+                <!-- Passo 5 -->
+                <li>Ligamos ao GitHub: <code>git remote add origin https://github.com/gusfngg/faculdade-webdesign.git</code>.</li>
+                <!-- Passo 6 -->
+                <li>Publicamos: <code>git push -u origin main</code>.</li>
+                <!-- Passo 7 -->
+                <li>Melhorias novas sempre com <code>add + commit + push</code>.</li>
+            </ol>
+
+            <!-- Texto do repositório -->
+            <p>
+                Repositório do grupo:
+                <a href="https://github.com/gusfngg/faculdade-webdesign">github.com/gusfngg/faculdade-webdesign</a>
+            </p>
+
+        </section>
+
+        <!-- SEÇÃO MELHORIAS -->
+        <!-- Aqui listamos os novos recursos da Atividade 2 -->
+        <section id="melhorias">
+            <!-- Section das melhorias -->
+            <!-- Mostra o que mudou em relação à Atividade 1 -->
+
+            <!-- Título da seção -->
+            <h2>Melhorias e Novos Recursos</h2>
+
+            <!-- Texto explicando as melhorias -->
+            <p>
+                Nesta versão mantivemos todo o conteúdo da Atividade 1
+                e adicionamos os recursos da Atividade 2.
+            </p>
+
+            <!-- Lista das melhorias -->
+            <ul>
+                <!-- Melhoria 1 -->
+                <li>20 elementos com Content, Padding, Border e Margin próprios.</li>
+                <!-- Melhoria 2 -->
+                <li>20+ propriedades de Flexbox em 5 containers demo + grade de caixas.</li>
+                <!-- Melhoria 3 -->
+                <li>Layout responsivo com media queries para celular.</li>
+                <!-- Melhoria 4 -->
+                <li>Arquivo style.css com mais de 300 linhas, todo comentado.</li>
+                <!-- Melhoria 5 -->
+                <li>Arquivo index.html com mais de 400 linhas, todo comentado.</li>
+                <!-- Melhoria 6 -->
+                <li>Versionamento Git + publicação no GitHub pelo VS Code.</li>
+            </ul>
+
+        </section>
+
     </main>
 
     <!-- RODAPÉ -->
@@ -284,7 +654,7 @@
 
         <!-- Linha de copyright -->
         <!-- &copy; mostra o símbolo © -->
-        <p>&copy; 2025 – Exemplo didático de HTML da Aula</p>
+        <p>&copy; 2026 – Atividade de Box Model, Flexbox e Git/GitHub</p>
 
         <!-- Linha do grupo -->
         <!-- Nomes de todos os integrantes -->
