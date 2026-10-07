@@ -386,8 +386,9 @@ footer a:hover {
 }
 
 /* CAIXA 12 — padding só nas laterais */
+/* Largura maior para o texto "Caixa 12" caber em 1 linha */
 .caixa-12 {
-    width: 100px; /* CONTENT */
+    width: 170px; /* CONTENT: largo para caber o texto com padding lateral */
     height: 60px; /* CONTENT */
     padding-left: 30px; /* PADDING: só esquerda */
     padding-right: 30px; /* PADDING: só direita */
@@ -438,8 +439,9 @@ footer a:hover {
 }
 
 /* CAIXA 17 — padding grande */
+/* Largura maior para o texto não estourar para fora da caixa */
 .caixa-17 {
-    width: 90px; /* CONTENT: pequeno */
+    width: 150px; /* CONTENT: ajustado para caber o texto com padding grande */
     height: 45px; /* CONTENT: pequeno */
     padding: 25px; /* PADDING: bem grande */
     border: 2px solid #6600cc; /* BORDER */
@@ -458,9 +460,10 @@ footer a:hover {
     margin: 6px; /* MARGIN */
 }
 
-/* CAIXA 19 — content mínimo */
+/* CAIXA 19 — padding máximo com largura que cabe o texto */
+/* Largura maior para o texto "Caixa 19" não estourar para fora */
 .caixa-19 {
-    width: 70px; /* CONTENT: mínimo */
+    width: 140px; /* CONTENT: ajustado para caber o texto com padding máximo */
     height: 35px; /* CONTENT: mínimo */
     padding: 20px 30px; /* PADDING: máximo */
     border: 3px solid #cc0000; /* BORDER */
@@ -540,11 +543,12 @@ code {
 }
 
 /* DEMO 2 — coluna com espaço */
+/* min-height garante altura mínima para o space-between espalhar os itens */
 .flex-coluna-espaco {
     flex-direction: column; /* FLEX 13: itens em coluna */
     justify-content: space-between; /* FLEX 14: espaço entre itens */
     align-items: flex-start; /* FLEX 15: alinha à esquerda */
-    height: 220px; /* altura para ver o espaço */
+    min-height: 240px; /* altura mínima para ver o espaço entre Topo/Meio/Base */
 }
 
 /* DEMO 3 — quebra de linha */
